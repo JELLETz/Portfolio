@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Internship</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <!-- font -->
+
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Font awesome -->
+</head>
+<body class="bg-gray-100 text-gray-900 roboto-thin">
+
+    <nav class="bg-slate-700 shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div>
+                <i class="fa-solid fa-bars text-white md:hidden" id="hamburger-btn"></i>
+            </div>
+            <div class="md:block hidden">
+            <ul class="flex space-x-20 text-white">
+                <li><a href="#home" class="hover-border">Home</a></li>
+                <li><a href="#projects" class="hover-border">Projects</a></li>
+                <li><a href="#contact" class="hover-border">Contact</a></li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="mobile-menu" class="hidden fixed inset-0 bg-sky-950 bg-opacity-90 flex justify-center items-center z-50">
+        <ul class="space-y-8 text-white text-xl text-center">
+            <li><a href="#home" class="hover:text-sky-300" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#projects" class="hover:text-sky-300" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#skills" class="hover:text-sky-300" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#contact" class="hover:text-sky-300" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+    </div>
+
+  <!-- Info Section -->
+  <section id="home" class="bg-slate-700 text-white md:h-screen h-auto flex flex-col md:flex-row items-center md:px-8">
+    <div class="md:w-1/2 w-full md:pr-6 flex-col">
+      <div class="ml-6 md:ml-0">
+        <h1 class="md:text-5xl text-3xl font-bold mb-6 mt-10 md:mt-0">I'm Natsit Buraphatsrilert</h1>
+        <p class="text-xl mb-8">A first-year Computer Engineering student</p>
+      </div>
+      <div class="mt-10 bg-gray-300 text-slate-900 rounded-lg p-4 hidden md:block">
+        <h3 class="text-3xl font-bold"> Skills </h3>
+        <hr class="border-1 border-black mb-4"/>
+        <div class="flex flex-row">
+          <div class="w-1/2">
+            <h5 class="text-xl font-bold mb-2"> Frontend </h5>
+            <ul class="font-bold list-disc ml-2">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Bootstrap</li>
+              <li>Tailwind CSS</li>
+              <li>React.js</li>
+        </ul>
+          </div>
+          <div class="w-1/2"> 
+            <h5 class="text-xl font-bold mb-2"> Backend </h5>
+            <ul class="font-bold list-disc ml-2">
+              <li>Prisma</li>
+              <li>PostgreSQL</li>
+              <li>MongoDB</li>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="md:w-1/2 w-full p-10 md:p-4">
+      <div class="bg-slate-800 p-6 rounded-lg shadow-lg">
+        <p class="text-base leading-relaxed"> &nbsp
+          I am a first-year Computer Engineering student with a strong passion for becoming a Software Developer. I thrive on challenges and am always eager to explore and adapt to new technologies. With a commitment to continuous learning, I aim to improve myself both in managing tasks efficiently and enhancing my technical skills. My goal is to gain hands-on experience through an internship, contributing to real-world projects while growing as a professional in the field.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- Info Section -->
+  
+
+  <!-- Projects Section -->
+  <section id="projects" class="container mx-auto px-6 py-12 bg-gray-100">
+    <h2 class="text-4xl font-bold ml-8 mb-8 mt-4">My Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <div class="bg-white shadow-lg rounded overflow-hidden">
+        <img src="images/bookletz/img05.png" alt="Project 1" class="w-full object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">BOOKLETz</h3>
+          <p class="text-gray-700 mb-4">A room booking website built using React.js, Tailwind css, and Prisma.</p>
+          <a href="/pages/bookletz.html"><button class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition duration-300 mr-2">
+            View Project
+          </button> </a>   
+          <a href="https://github.com/JELLETz/BOOKLETz"><i class="fa-brands fa-github"></i> Source Code</a>   
+        </div>
+      </div>
+
+      <div class="bg-white shadow-lg rounded overflow-hidden">
+        <img src="images/autochaining/pic01.png" alt="Project 2" class="w-full object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Auto Chaining</h3>
+          <p class="text-gray-700 mb-4">An automated gameplay programming project developed using Node.js, leveraging Robot.js and Tesseract.js.</p>
+          <a href="/pages/autochaining.html">
+          <button class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition duration-300 mr-2">
+            View Project
+          </button> 
+          </a>      
+          <a href="https://github.com/JELLETz/AutoChaining"><i class="fa-brands fa-github"></i> Source Code</a>   
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- Projects Section -->
+
+  <!-- Skills Section -->
+   <section id="skills" class="bg-white w-full md:hidden p-8">
+    <h3 class="text-3xl font-bold"> Skills </h3>
+    <hr class="border-1 border-black mb-4"/>
+    <div class="flex flex-row">
+      <div class="w-1/2">
+        <h5 class="text-xl font-bold mb-2"> Frontend </h5>
+        <ul class="font-bold list-disc ml-2">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Bootstrap</li>
+          <li>Tailwind CSS</li>
+          <li>React.js</li>
+    </ul>
+      </div>
+      <div class="w-1/2"> 
+        <h5 class="text-xl font-bold mb-2"> Backend </h5>
+        <ul class="font-bold list-disc ml-2">
+          <li>Prisma</li>
+          <li>PostgreSQL</li>
+          <li>MongoDB</li>
+      </div>
+    </div>
+  </div>
+   </section>
+  
+
+  <!-- Contact Section -->
+  <section id="contact" class="px-6 py-12 md:bg-gray-200 bg-gray-100 md:bg-white w-full">
+    <h2 class="text-4xl font-bold ml-8 mb-8">Contact Me</h2>
+    <div class="max-w-lg mx-auto bg-white p-8 rounded shadow-lg">
+      <h3 class="text-xl font-bold">Email: <span class="text-lg">natsitdido@gmail.com</span></h3>
+      <h3 class="text-xl font-bold">Tel: <span class="text-lg">096-735-9018</span></h3>
+      <h3 class="text-xl font-bold">Line Id: <span class="text-lg">didonakub</span></h3>
+    </div>
+  </section>
+
+  <script>
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    function toggleMenu() {
+        mobileMenu.classList.toggle('hidden');
+    }
+
+    hamburgerBtn.addEventListener('click', toggleMenu);
+</script>
+</body>
+</html>
